@@ -10,8 +10,11 @@ Craft sisteminin kullanımı; -- ÜRET butonunda bir tablo hariç diğer hangi c
 Envanter hakkında fotoğraflar;
 
 
+![image](https://github.com/baranraider/ED-V4-inspired-inventory/assets/73917011/1c305912-3ad0-42b0-9598-1a2bb4e5b56e)
 
-![image](https://github.com/baranraider/ED-V4-inspired-inventory/assets/73917011/b5c9195c-c048-4804-a71c-13eeaca8ba65)
-![image](https://github.com/baranraider/ED-V4-inspired-inventory/assets/73917011/1668e224-195b-4c1b-a5fe-f92370f526cb)
-![image](https://github.com/baranraider/ED-V4-inspired-inventory/assets/73917011/f6434c88-b6be-49af-b36d-617055e7a291)
+![image](https://github.com/baranraider/ED-V4-inspired-inventory/assets/73917011/b5e8d629-9c9a-4c58-a991-14b570cd51ab)
+
+![image](https://github.com/baranraider/ED-V4-inspired-inventory/assets/73917011/7b0ae300-7b6d-4f30-b32e-ab258826507f)
+
+
 
