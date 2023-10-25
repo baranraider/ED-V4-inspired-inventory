@@ -1,3 +1,5 @@
+Sadece old qbcore uyumludur.
+
 Not : qb-weapons içerisinde ki tgian-hud:load-data adlı eventi qbcore içerisinde onPlayerLoaded içerisine yazmanız gerekiyor. Sunucuya ilk girdiğinizde mermilerinizi yüklemesi açısından.
 
 qb-inventoryv2/server.lua içerisinde giveitem komutunun içerisinde silahlar için seri numarası verme kodu bulunmakta. Orada ki info.serie içerisinde ki değeri qb-core/server/players.lua içerisinde ki silah seri numarası koduyla aynı yapın.
