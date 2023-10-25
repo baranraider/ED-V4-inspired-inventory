@@ -1,2 +1,2 @@
-# ED:V4 inspired inventory
+# EDV4 İnspired İnventory
  

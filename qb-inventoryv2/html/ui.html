@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="https://kit.fontawesome.com/9d1010a476.js" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-color: rgba(0,0,0,0); font-family: 'Roboto', sans-serif !important;">
+        <div id="qbus-inventory">
+            <div class="GiveItembox">
+                <div class="GiveItemPlayers"></div>
+            </div>
+            <div class="inv-container" style="width: 100%;">
+                <div class="player-inventory" style="width: 32%;margin-left: 9%;">
+                    <div class="player-inv-info">
+                        <span id="player-inv-label">Oyuncu</span><br><br>
+                        <span id="player-inv-weight"></span>
+                        <img style="margin-left: 0.0%;
+                        width:0.0%;
+                        font-size: 0px;
+                        position: fixed;
+                        top: 110.0%;
+                        display:left"src="images/weight.png">
+                        <div id="weight-bar">
+                            <div class="player-weight"></div>
+                        </div>
+                    </div>
+                    <div class="items-slots item-slots-player" data-inventory="player">
+                    </div>
+                </div>
+
+
+                <div class="inv-options">
+                    <div class="inv-option-bg">
+                        <input type="number" id="item-amount" class="inv-option-item2" min=0 value="0" onClick="this.select();" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"></input>
+                        <div class="inv-option-item" id="item-use">KULLAN</div>
+                        <div class="inv-option-item" id="item-give"><p>VER</p></div>
+                        <div class="inv-option-item" id="craft-btn">ÜRET</div>
+                        <div class="inv-option-item" id="clothes" onclick="$('.inv-clothes').css('display', 'flex');$('.inv-option-bg').css('display', 'none');">KIYAFET</div>
+                        <div class="inv-option-item" id="inv-close">KAPAT</div> 
+                    </div>
+                    
+                    <div class="inv-clothes">
+                        <div class="clothe-label">Kıyafetlerim</div>
+                        <div class="clothe-x" onclick="$('.inv-clothes').css('display', 'none');$('.inv-option-bg').css('display', 'block');"><i class="fas fa-times"></i></div>
+                        <div class="clothe-items" data-inventory="player"></div>
+                    </div>
+
+                </div>
+                                
+                <div class="other-inventory" style="width: 40%;margin-right: 9%;">
+                <div class="other-inv-info">
+                    <span id="other-inv-label"></span><br><br>
+                    <span id="other-inv-weight"></span>
+                        <img style="margin-left: 27.5%;
+                        width:0.9%;
+                        font-size: 15px;
+                        position: fixed;
+                        top: 119.4%;
+                        display:left"src="images/weight.png">
+                    <div id="weight-bar2">
+                        <div class="other-weight"></div>
+                    </div>
+                    <div class="items-slots item-slots-other" data-inventory="other">
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+            <div class="ply-iteminfo-container">
+                <div class="ply-iteminfo">
+                    <div class="iteminfo-content">
+                        <div class="item-info-title"></div>
+                        <div class="item-info-description"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-background"></div>
+        </div>
+
+        <div class="help-menu">
+            <h3>Envanter :</h3>
+            <p>
+
+                 Dolu bir yığını taşımak için, taşıyacağınız alanının boş olduğundan emin olun<br />
+                 Miktar kısmını kullanarak eşyadan kaç tane seçebileceğinizi ayarlayabilirsiniz.
+                 Miktar kısmını "RESET" butonu ile sıfırlayabilirsiniz.
+
+            <h3>Tuş kombini:</h3>
+            <ul>
+                <li>Sol Tık: Seçili slottaki eşyayı sürüklemeni sağlar.</li>
+                <li>Çift + Sol Mouse Click'i İle : Seçili slottaki eşyayı kullanmanızı sağlar.</li>
+                <li>Envanterinizde ki silahın üzerine tıklarsanız ekipman butonu ekrana gelecektir.</li>
+                <li>Shift + Sol Mouse Click'i İle: Seçili slottaki eşyayı diğer envantere atar.</li>
+                <li>VER İle: en yakınınızda ki oyuncuya miktar kısmına girdiğiniz değer kadar eşya verebilirsiniz. "0" ise hepsini verir..</li>
+                <li>ÜRET İle: Gerekli eşyaları harmanlayarak yeni eşyalar üretebilirsiniz..</li>
+            </p>
+            <h3>Eşya Dayanıklılığı:</h3>
+            <p>
+                Her geçen gün eşyanın gücü azalır. Eşyanın azalma durumu kullanma veya kullanmamak ile ilgili değildir , geçen süre ile azalmaktadır. Yeşil eşyanın iyi durumda olduğunu , kırmızı ise eşyanın kötü durumda olduğunu göstermektedir.
+            </p>
+        </div>
+
+
+
+
+        <div class="weapon-attachments-container">
+            <div class="weapon-attachments-container-title">Pistol | <span style="font-size: 2vh;">9mm</span></div>
+            <div class="weapon-attachments-container-description">Bunu Okuyorsan İyi Bok Yiyorsun Aferim</div>
+            <div class="weapon-attachments-container-details"><span style="font-weight: bold; letter-spacing: .1vh;">Serie Nummer</span><br> 12345678<br><br><span style="font-weight: bold; letter-spacing: .1vh;">Durability</span> <div class="weapon-attachments-container-detail-durability"><div class="weapon-attachments-container-detail-durability-total"></div></div></div>
+            <img src="./attachment_images/weapon_pistol.png" class="weapon-attachments-container-image">
+        
+            <div class="weapon-attachments-title"><span style="font-weight: bold; letter-spacing: .1vh;">Eklentiler</span></div>
+            <div class="weapon-attachments"></div>
+
+            <div class="weapon-attachments-remove"><i class="fas fa-trash"></i></div>
+
+            <div class="weapon-attachments-back"><p>GERİ GİT</p></div>
+        </div>
+
+        <div class="itemboxes-container"></div>
+        <div class="itembox-container template"></div>
+        <div class="requiredItem-container"></div>
+        <div class="z-hotbar-inventory"></div>
+
+        <script src="js/fontawesome.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
